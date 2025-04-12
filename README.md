@@ -12,7 +12,7 @@ You must also ensure that you have Zenity and PDF Toolkit installed.
 # Usage
 Once installed, right clicking on a PDF file will show a "Scripts" menu, with a both a "Password Protect PDF to Done" and a "Remove PDF Password to Done" submenu entries. A dialog box will ask for a password.  If it does not already exist, the script will create a /Done folder.  Using the password supplied, the .pdf file will either be password-protected or the password will be removed and the new file will be saved in the /Done folder.  The original file will be preserved.
 # Alternative
-I also found that some files could not be decrypted using pdftk.  However qpdf might work.  This must be installed using `sudo apt install qpdf`.  The alternative "Remove PDF Password to Done qPDF" script will do the same job using qpdf.
+I also found that some files could not be decrypted using pdftk.  These are often encrypted using the AES256 algorithm.  However qpdf might work.  This must be installed using `sudo apt install qpdf`.  The alternative "Remove PDF Password to Done qPDF" script will do the same job using qpdf.
 # Credits
 Thanks to Ricardo Ferreira (https://launchpad.net/compress-pdf/) for the original work on Compress PDF which was the inspiration for this project.
 
